@@ -32,13 +32,17 @@ h1 {
 
 .header {
   z-index: 1;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0;
   padding-left: 2%;
   display: grid;
   grid-template-columns: 5fr 4fr;
   height: 81px;
+}
+
+.header-logo {
+  width: 110px;
 }
 
 .header-links {
@@ -98,6 +102,13 @@ h1 {
   width: 100%;
 }
 
+.img-md {
+  margin-left: 20%;
+  width: 60%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .grid-centered-text {
   position: absolute;
   top: 50%;
@@ -114,6 +125,9 @@ h1 {
 #content-no-bg {
   margin-top: 100vh;
   padding-top: 30px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #content {
@@ -136,7 +150,7 @@ p {
 }
 
 footer {
-  padding: 45px;
+  padding: 10px 20px 10px 20px;
   background-color: white;
 }
 
@@ -152,9 +166,17 @@ footer {
     color: #444444;
   }
 
+  .footer-links {
+    display: flex;
+  }
+
   ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
 
     li {
       margin-bottom: 15px;
